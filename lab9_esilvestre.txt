@@ -1,0 +1,39 @@
+PLAY [esilvestre] **********************
+
+TASK [Gathering Facts] *******************
+ok: [esilvestre]
+
+TASK [update Apache (httpd) installed] ***************
+ok: [esilvestre]
+
+TASK [restart apache] ********************
+changed: [esilvestre]
+
+TASK [install extra packages repository for enterprise Linux (EPEL)] *****
+ok: [esilvestre]
+
+TASK [remove tree package] *******************
+ok: [esilvestre]
+
+TASK [set hostname to Seneca ID] *****************
+ok: [esilvestre]
+
+TASK [create a new user] *******************
+ok: [esilvestre]
+
+TASK [Allow SSH access without password] *************
+ok: [esilvestre]
+
+TASK [create a list of directories] ****************
+ok: [esilvestre] => (item=1)
+ok: [esilvestre] => (item=2)
+ok: [esilvestre] => (item=3)
+ok: [esilvestre] => (item=4)
+ok: [esilvestre] => (item=5)
+ok: [esilvestre] => (item=6)
+ok: [esilvestre] => (item=7)
+ok: [esilvestre] => (item=8)
+ok: [esilvestre] => (item=9)
+
+PLAY RECAP ***********************
+esilvestre                 : ok=9    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
